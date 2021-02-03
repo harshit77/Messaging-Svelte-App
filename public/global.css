@@ -1,0 +1,316 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: 'Cairo', sans-serif !important;
+}
+
+.bkgLogin {
+	background: url('./images/2850942.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginField {
+	background: white;
+	opacity: 1;
+    padding: 25px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 5px 4px #6c757d;
+}
+
+.primaryButton {
+	background: #2D599D !important;
+}
+
+.centerElement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.sv-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.form-item-container >label {
+	width: 100%
+}
+.auto-margin {
+	margin: 0 auto
+}
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sv-error {
+	color: #f00;
+}
+.full-width {
+	width: 100%;
+}
+.toast-right {
+	position: fixed !important;
+	top: 20px;
+	right: 20px;
+	width: 350px !important;
+}
+.hide {
+	display: none
+}
+.show {
+	display:block;
+	opacity:1
+}
+.relative {
+	position: relative;
+	margin: 10px 0;
+}
+.app-layout, .app-layout-user {
+	display: grid;
+	height: 91vh;
+	grid-template-columns: 100px 250px 1fr;
+	grid-template-rows: auto 1fr auto;
+}
+.app-layout-user {
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: auto 1fr auto;
+}
+.userBoard {
+	background-color: #362233;
+	grid-column: 1;
+	grid-row: 1/4;
+	overflow: scroll;
+}
+
+.upperbar {
+	background-color: #362233;
+	overflow: scroll;
+}
+
+.team {
+	background-color: #362233;
+	grid-column: 1;
+	grid-row: 1/3;
+	overflow: scroll;
+}
+.createTeam {
+	background-color: #fff;
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.channel {
+	background-color: #52364E;
+	grid-column: 2;
+	grid-row: 1/4
+}
+
+.header {
+	text-align: center;
+	padding: 5px 20px;
+	position: sticky;
+	top:0;
+	background: #4d3e3e;
+	color: #fff;
+	z-index: 1;
+	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.message-container {
+	grid-column: 3;
+	grid-row: 1;
+	overflow: scroll;
+}
+
+.message-container-user {
+	grid-column: 2/4;
+	grid-row: 1;
+	overflow: scroll;
+}
+
+.input {
+	grid-column: 3;
+	grid-row: 3;
+	padding: 0;
+	background-color: #F2F2F2;
+}
+.message-container-user ~ .input {
+	grid-column: 2/4;
+	grid-row: 3;
+}
+.team-graphic, .message-graphic {
+    border-radius: 50% !important;
+    background-color: #655c56 !important;
+	color: #fff !important;
+	font-weight: 400;
+	font-family: 'Cairo', sans-serif
+}
+
+.message-graphic {
+	width: 40px !important;
+	height: 40px !important;
+	margin-right: 20px !important;
+}
+
+.team-title {
+	padding: 15px 10px 10px 10px !important;
+	font-size: 16px !important;
+}
+
+#message {
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 20px;
+}
+
+.created-at {
+	font-size: 14px;
+    margin-left: 10px;
+    color: #888888;
+}
+
+.message-list li {
+	margin: 20px 0;
+}
+
+.channel-list {
+	height: 400px;
+	overflow: scroll
+}
+.channel-list li, .message-list li {
+	height: auto !important;
+}
+
+.activity-list {
+	padding: 5px 0 0 0 !important;
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+}
+.activity-list a, .activity-list a:hover {
+	color: #fff;
+	text-decoration: none
+}
+
+.activity-list .mdc-list-item {
+	height: auto !important;
+    align-items: center !important;
+    flex-flow: column nowrap !important;
+    justify-content: center!important;
+}
+
+.activity-text {
+
+}
+
+.team-list li span {
+	margin-left: 8px!important;
+    margin-right: 16px!important;
+    width: 50px!important;
+	height: 50px!important;
+}
+.user-list li span.mdc-list-item__text  {
+	margin-left: 8px!important;
+	margin-right: 16px!important;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.header-title, .sub-header-title {
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Cairo', sans-serif;
+}
+.sub-header-title {
+	font-size: 14px;
+	font-weight: 200;
+}
+.no-space {
+	padding: 0;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.font-semi-bold {
+	font-weight: 600;
+}
+
+.font-extra-light {
+	font-weight: 600;
+}
+
+.font-regular {
+	font-weight: 600;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+.align-middle > button {
+	width:inherit;
+	height: inherit;
+	padding: 0;
+}
+
+.mdc-dialog .mdc-dialog__surface {
+	width: 280px;
+}
+
+.noMessage {
+	text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.text-message {
+	background: #ccc;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.text-primary-message {
+ font-size: 13px;
+ font-weight: 400;
+ font-family: 'Cairo', sans-serif 
+}
+
+.text-primary-message:before {
+	height: auto !important;	
+}
+
+.text-secondary-message {
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	font-family: 'Cairo', sans-serif !important;
+	margin-top: 7px !important;
+}
+
+.spacingTopMedium {
+	padding: 10px 0 0 0;
+}
+@media (min-width: 592px) {
+.mdc-dialog .mdc-dialog__surface {
+   width: 560px;
+}
+}
